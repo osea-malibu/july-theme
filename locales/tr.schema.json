@@ -56,8 +56,8 @@
       "name": "Sosyal medya",
       "settings": {
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https://twitter.com/shopify"
+          "label": "X/Twitter",
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -476,7 +476,7 @@
           "label": "Duyuruları otomatik olarak döndür"
         },
         "change_slides_speed": {
-          "label": "Slaytları şu zaman aralığında değiştir:"
+          "label": "Şu zaman aralığında değiştir:"
         },
         "header__1": {
           "content": "Sosyal medya simgeleri",
@@ -487,6 +487,20 @@
         },
         "show_social": {
           "label": "Simgeleri masaüstünde göster"
+        },
+        "header__3": {
+          "content": "Ülke/bölge seçici",
+          "info": "Ülke/bölge eklemek için [pazar ayarlarınıza](/admin/settings/markets) gidin."
+        },
+        "enable_country_selector": {
+          "label": "Ülke/bölge seçiciyi etkinleştir"
+        },
+        "header__4": {
+          "content": "Dil seçici",
+          "info": "Dil eklemek için [dil ayarlarınıza](/admin/settings/languages) gidin."
+        },
+        "enable_language_selector": {
+          "label": "Dil seçiciyi etkinleştir"
         }
       },
       "presets": {
@@ -647,7 +661,7 @@
       "settings": {
         "custom_liquid": {
           "label": "Liquid kodu",
-          "info": "Gelişmiş özelleştirmeler oluşturmak için uygulama parçacıkları veya başka bir kod ekleyin."
+          "info": "Gelişmiş özelleştirmeler oluşturmak için uygulama parçacıkları veya başka bir kod ekleyin. [Daha fazla bilgi edinin](https://shopify.dev/docs/api/liquid)"
         }
       },
       "presets": {
@@ -1268,6 +1282,9 @@
             },
             "button_link": {
               "label": "Düğme bağlantısı"
+            },
+            "outline_button": {
+              "label": "Dış çizgi düğme stilini kullan"
             }
           }
         },
@@ -1494,10 +1511,6 @@
             "label": "2 sütun"
           }
         },
-        "enable_quick_buy": {
-          "label": "Hızlı ekleme düğmesini etkinleştir",
-          "info": "Açılır pencere ve çekmece sepet türü için optimumdur."
-        },
         "filter_type": {
           "label": "Masaüstü filtre düzeni",
           "options__1": {
@@ -1510,6 +1523,15 @@
             "label": "Çekmece"
           },
           "info": "Çekmece, varsayılan mobil düzendir."
+        },
+        "quick_add": {
+          "label": "Hızlı ekleme",
+          "info": "Toplu seçeneği, daha yüksek miktarlarda satın alınan ürünler için optimize edilmiştir.",
+          "options": {
+            "option_1": "Yok",
+            "option_2": "Standart",
+            "option_3": "Toplu"
+          }
         }
       }
     },
@@ -1622,12 +1644,25 @@
           "name": "Varyasyon seçici",
           "settings": {
             "picker_type": {
-              "label": "Tür",
+              "label": "Stil",
               "options__1": {
                 "label": "Açılır liste"
               },
               "options__2": {
                 "label": "Seçenekler"
+              }
+            },
+            "swatch_shape": {
+              "label": "Numune parça",
+              "info": "Ürün seçeneklerinde [numune parçaları](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) etkinleştirin.",
+              "options__1": {
+                "label": "Yuvarlak"
+              },
+              "options__2": {
+                "label": "Kare"
+              },
+              "options__3": {
+                "label": "Yok"
               }
             }
           }
@@ -2465,12 +2500,25 @@
           "name": "Varyasyon seçici",
           "settings": {
             "picker_type": {
-              "label": "Tür",
+              "label": "Stil",
               "options__1": {
                 "label": "Açılır menü"
               },
               "options__2": {
                 "label": "Seçenekler"
+              }
+            },
+            "swatch_shape": {
+              "label": "Numune parça",
+              "info": "Ürün seçeneklerinde [numune parçaları](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) etkinleştirin.",
+              "options__1": {
+                "label": "Yuvarlak"
+              },
+              "options__2": {
+                "label": "Kare"
+              },
+              "options__3": {
+                "label": "Yok"
               }
             }
           }
@@ -3075,7 +3123,10 @@
       "name": "Adresler"
     },
     "main-login": {
-      "name": "Giriş bilgileri"
+      "name": "Giriş bilgileri",
+      "shop_login_button": {
+        "enable": "Shop ile giriş yapmayı etkinleştirin"
+      }
     },
     "main-order": {
       "name": "Sipariş"
@@ -3291,6 +3342,20 @@
       },
       "presets": {
         "name": "Çok satırlı"
+      }
+    },
+    "quick-order-list": {
+      "name": "Hızlı sipariş listesi",
+      "settings": {
+        "show_image": {
+          "label": "Görselleri göster"
+        },
+        "show_sku": {
+          "label": "SKU'ları göster"
+        }
+      },
+      "presets": {
+        "name": "Hızlı sipariş listesi"
       }
     }
   }

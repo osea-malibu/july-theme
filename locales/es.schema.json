@@ -56,8 +56,8 @@
       "name": "Redes sociales",
       "settings": {
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https://twitter.com/shopify"
+          "label": "X / Twitter",
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -476,7 +476,7 @@
           "label": "Rotar anuncios automáticamente"
         },
         "change_slides_speed": {
-          "label": "Cambiar de diapositiva cada"
+          "label": "Cambiar cada"
         },
         "header__1": {
           "content": "Íconos de redes sociales",
@@ -487,6 +487,20 @@
         },
         "show_social": {
           "label": "Mostrar íconos en el escritorio"
+        },
+        "header__3": {
+          "content": "Selector de país o región",
+          "info": "Para agregar un país o una región, ve a la [configuración del mercado.](/admin/settings/markets)"
+        },
+        "enable_country_selector": {
+          "label": "Activar selector de país o región"
+        },
+        "header__4": {
+          "content": "Selector de idioma",
+          "info": "Para agregar un idioma, ve a la [configuración de idiomas.](/admin/settings/languages)"
+        },
+        "enable_language_selector": {
+          "label": "Activar selector de idioma"
         }
       },
       "presets": {
@@ -647,7 +661,7 @@
       "settings": {
         "custom_liquid": {
           "label": "Código de Liquid",
-          "info": "Agrega fragmentos de la aplicación u otros códigos para crear personalizaciones avanzadas."
+          "info": "Agrega fragmentos de la aplicación u otros códigos para crear personalizaciones avanzadas. [Más información](https://shopify.dev/docs/api/liquid)"
         }
       },
       "presets": {
@@ -1268,6 +1282,9 @@
             },
             "button_link": {
               "label": "Enlace de botón"
+            },
+            "outline_button": {
+              "label": "Usar estilo de botón con contorno"
             }
           }
         },
@@ -1494,10 +1511,6 @@
             "label": "2 columnas"
           }
         },
-        "enable_quick_buy": {
-          "label": "Activar botón de agregado rápido",
-          "info": "Funciona de manera óptima con ventanas emergentes o carritos laterales."
-        },
         "filter_type": {
           "label": "Filtro de diseño para computadora",
           "options__1": {
@@ -1510,6 +1523,15 @@
             "label": "Cajón"
           },
           "info": "El cajón es el diseño para móviles predeterminado."
+        },
+        "quick_add": {
+          "label": "Agregado rápido",
+          "info": "La opción Masivo es la mejor para los artículos que se adquieren en mayores cantidades.",
+          "options": {
+            "option_1": "Ninguno",
+            "option_2": "Estándar",
+            "option_3": "Masivo"
+          }
         }
       }
     },
@@ -1623,12 +1645,25 @@
           "name": "Selector de variante",
           "settings": {
             "picker_type": {
-              "label": "Tipo",
+              "label": "Estilo",
               "options__1": {
                 "label": "Desplegable"
               },
               "options__2": {
                 "label": "Miniaturas"
+              }
+            },
+            "swatch_shape": {
+              "label": "Muestra",
+              "info": "Habilita [muestras](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) en las opciones de producto.",
+              "options__1": {
+                "label": "Círculo"
+              },
+              "options__2": {
+                "label": "Cuadrado"
+              },
+              "options__3": {
+                "label": "Ninguna"
               }
             }
           }
@@ -2465,12 +2500,25 @@
           "name": "Selector de variante",
           "settings": {
             "picker_type": {
-              "label": "Tipo",
+              "label": "Estilo",
               "options__1": {
                 "label": "Desplegable"
               },
               "options__2": {
                 "label": "Botones"
+              }
+            },
+            "swatch_shape": {
+              "label": "Muestra",
+              "info": "Habilita [muestras](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) en las opciones de producto.",
+              "options__1": {
+                "label": "Círculo"
+              },
+              "options__2": {
+                "label": "Cuadrado"
+              },
+              "options__3": {
+                "label": "Ninguna"
               }
             }
           }
@@ -3075,7 +3123,10 @@
       "name": "Direcciones"
     },
     "main-login": {
-      "name": "Inicio de sesión"
+      "name": "Inicio de sesión",
+      "shop_login_button": {
+        "enable": "Habilitar Iniciar sesión con Shop"
+      }
     },
     "main-order": {
       "name": "Pedido"
@@ -3291,6 +3342,20 @@
       },
       "presets": {
         "name": "Varias filas"
+      }
+    },
+    "quick-order-list": {
+      "name": "Lista de pedidos rápidos",
+      "settings": {
+        "show_image": {
+          "label": "Mostrar imágenes"
+        },
+        "show_sku": {
+          "label": "Mostrar SKU"
+        }
+      },
+      "presets": {
+        "name": "Lista de pedidos rápidos"
       }
     }
   }
